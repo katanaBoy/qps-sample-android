@@ -1,33 +1,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/carina_world"
-        android:textColor="#FF8000"
-        android:textSize="26pt" />
 
     <ImageView
         android:id="@+id/carina_logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/next_button"
-        android:layout_below="@id/title"
-        android:src="@drawable/carina" />
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_login_background" />
 
-    <Button
+    <android.support.design.button.MaterialButton
         android:id="@+id/next_button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:text="@string/next_button"
-        android:textSize="30sp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.0"
+        android:paddingLeft="60dp"
+        android:paddingTop="10dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="10dp"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        app:backgroundTint="#ff6f00"
+        app:cornerRadius="32dp" />
 </RelativeLayout>
