@@ -1,36 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/carina_world"
-        android:id="@+id/title"
-        android:textSize="26pt"
-        android:textColor = "#FF8000"
-        android:gravity="center"/>
+        android:textColor="#FF8000"
+        android:textSize="26pt" />
 
     <ImageView
+        android:id="@+id/carina_logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/carina_logo"
-        android:layout_below="@id/title"
         android:layout_above="@id/next_button"
+        android:layout_below="@id/title"
         android:src="@drawable/carina" />
 
     <Button
+        android:id="@+id/next_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/next_button"
-        android:id="@+id/next_button"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:textSize="30sp"/>
-
+        android:text="@string/next_button"
+        android:textSize="30sp" />
 </RelativeLayout>
