@@ -17,7 +17,7 @@ public class FragmentWebView extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_web_view, container);
+        return inflater.inflate(R.layout.fragment_web_view, null);
     }
 
     @Override
@@ -31,6 +31,6 @@ public class FragmentWebView extends Fragment {
     @SuppressLint("SetJavaScriptEnabled")
     private void initWebView(WebView webView) {
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("https://www.carina-core.io");
+        webView.loadUrl("https://www.carina-core.io/");
     }
 }
