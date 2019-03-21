@@ -16,6 +16,7 @@ public class ActivityMain extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(ActivityMain.this, ActivityLoginForm.class));
+                finish();
             }
         });
     }

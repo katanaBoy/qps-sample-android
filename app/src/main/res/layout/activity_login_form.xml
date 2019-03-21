@@ -28,6 +28,17 @@
             android:textSize="62sp" />
     </FrameLayout>
 
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:contentDescription="@null"
+        android:focusable="true"
+        android:padding="16dp"
+        android:src="@drawable/ic_left_arrow" />
+
     <LinearLayout
         android:id="@+id/loginForm"
         android:layout_width="match_parent"

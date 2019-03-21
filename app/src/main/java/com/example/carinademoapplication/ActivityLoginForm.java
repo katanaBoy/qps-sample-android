@@ -84,6 +84,14 @@ public class ActivityLoginForm extends AppCompatActivity {
 
             }
         });
+
+        findViewById(R.id.backButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ActivityLoginForm.this, ActivityMain.class));
+                finish();
+            }
+        });
     }
 
     private void checkIsNeedToEnableLoginButton() {
