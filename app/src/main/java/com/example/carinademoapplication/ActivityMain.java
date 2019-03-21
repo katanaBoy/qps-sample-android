@@ -12,12 +12,9 @@ public class ActivityMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.next_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ActivityMain.this, ActivityLoginForm.class));
-                finish();
-            }
+        findViewById(R.id.next_button).setOnClickListener(v -> {
+            startActivity(new Intent(ActivityMain.this, ActivityLoginForm.class));
+            finish();
         });
     }
 }

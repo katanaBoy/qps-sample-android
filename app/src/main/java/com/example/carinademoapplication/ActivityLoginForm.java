@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Switch;
@@ -26,28 +25,13 @@ public class ActivityLoginForm extends AppCompatActivity {
         setContentView(R.layout.activity_login_form);
 
         loginButton = findViewById(R.id.login_button);
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ActivityLoginForm.this, ActivityDescription.class));
-            }
-        });
+        loginButton.setOnClickListener(v -> startActivity(new Intent(ActivityLoginForm.this, ActivityDescription.class)));
 
         privacySwitch = findViewById(R.id.checkbox);
-        privacySwitch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkIsNeedToEnableLoginButton();
-            }
-        });
+        privacySwitch.setOnClickListener(v -> checkIsNeedToEnableLoginButton());
 
         genderRadioGroup = findViewById(R.id.genderRadioGroup);
-        genderRadioGroup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                checkIsNeedToEnableLoginButton();
-            }
-        });
+        genderRadioGroup.setOnClickListener(v -> checkIsNeedToEnableLoginButton());
 
         name = findViewById(R.id.name);
         name.addTextChangedListener(new TextWatcher() {
@@ -85,12 +69,9 @@ public class ActivityLoginForm extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.backButton).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ActivityLoginForm.this, ActivityMain.class));
-                finish();
-            }
+        findViewById(R.id.backButton).setOnClickListener(v -> {
+            startActivity(new Intent(ActivityLoginForm.this, ActivityMain.class));
+            finish();
         });
     }
 
