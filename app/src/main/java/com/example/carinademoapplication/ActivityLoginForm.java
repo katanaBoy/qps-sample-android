@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
@@ -25,7 +24,7 @@ public class ActivityLoginForm extends AppCompatActivity {
         setContentView(R.layout.activity_login_form);
 
         loginButton = findViewById(R.id.login_button);
-        loginButton.setOnClickListener(v -> startActivity(new Intent(ActivityLoginForm.this, ActivityDescription.class)));
+        loginButton.setOnClickListener(v -> startActivity(new Intent(ActivityLoginForm.this, ActivityTestScreens.class)));
 
         privacySwitch = findViewById(R.id.checkbox);
         privacySwitch.setOnClickListener(v -> checkIsNeedToEnableLoginButton());
@@ -70,9 +69,13 @@ public class ActivityLoginForm extends AppCompatActivity {
         });
 
         findViewById(R.id.backButton).setOnClickListener(v -> {
-            startActivity(new Intent(ActivityLoginForm.this, ActivityMain.class));
+            startActivity(new Intent(ActivityLoginForm.this, ActivitySplash.class));
             finish();
         });
+
+        if (BuildConfig.DEBUG) {
+            loginButton.setEnabled(true);
+        }
     }
 
     private void checkIsNeedToEnableLoginButton() {

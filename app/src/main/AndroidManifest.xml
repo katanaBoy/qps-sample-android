@@ -11,11 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ActivityDescription" />
+        <activity android:name=".ActivityTestScreens" />
 
         <activity android:name=".ActivityLoginForm" />
 
-        <activity android:name=".ActivityMain">
+        <activity android:name=".ActivitySplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />

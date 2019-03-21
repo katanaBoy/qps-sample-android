@@ -10,4 +10,8 @@
     <string name="checkbox_text">I agree to the Privacy Policy</string>
     <string name="log_in">Log In</string>
     <string name="carina">CARINA</string>
+    <string name="web_view">Web View</string>
+    <string name="charts">Charts</string>
+    <string name="map">Map</string>
+    <string name="ui_elements">UI elements</string>
 </resources>
