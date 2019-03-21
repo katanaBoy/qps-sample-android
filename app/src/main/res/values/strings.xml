@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CarinaDemoApplication</string>
+    <string name="app_name">Carina Demo</string>
     <string name="carina_world">Welcome to Carina World!</string>
     <string name="next_button">Next</string>
     <string name="sign_up_button">Sign Up</string>
