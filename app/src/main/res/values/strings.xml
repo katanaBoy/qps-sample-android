@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">CarinaDemoApplication</string>
     <string name="carina_world">Welcome to Carina World!</string>
-    <string name="next_button">NEXT</string>
-    <string name="login_button">LOGIN</string>
+    <string name="next_button">Next</string>
+    <string name="sign_up_button">Sign Up</string>
     <string name="name_text">Name</string>
     <string name="password_text">Password</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="checkbox_text">I agree to the Privacy Policy</string>
     <string name="log_in">Log In</string>
+    <string name="carina">CARINA</string>
 </resources>
