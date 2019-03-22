@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.example.carinademoapplication.test_screens.FragmentMap;
 import com.example.carinademoapplication.test_screens.FragmentWebView;
 
 public class ActivityTestScreens extends AppCompatActivity {
@@ -52,6 +53,10 @@ public class ActivityTestScreens extends AppCompatActivity {
         switch (itemId) {
             case R.id.nav_webView:
                 newFragment = new FragmentWebView();
+                break;
+
+            case R.id.nav_map:
+                newFragment = new FragmentMap();
                 break;
         }
 
