@@ -16,4 +16,11 @@
     <string name="ui_elements">UI elements</string>
 
     <string name="google_maps_key">AIzaSyC69RU8HVJPTQ9KfwwN4L5Knd92J4Rslc0</string>
+    <string name="text">Text</string>
+    <string name="email">Email</string>
+    <string name="date">Date</string>]
+    <string name="other">Other</string>
+    <string name="enable">Enable</string>
+    <string name="dolor_sit_amet">Dolor sit amet</string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
 </resources>

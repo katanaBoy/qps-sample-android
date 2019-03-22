@@ -19,8 +19,6 @@ import com.solvd.carinademoapplication.R;
 
 public class FragmentMap extends Fragment {
 
-    private static final String TAG = FragmentMap.class.getSimpleName();
-
     @SuppressLint("InflateParams")
     @Nullable
     @Override
