@@ -38,9 +38,9 @@ public class FragmentMap extends Fragment {
                     this.googleMap = googleMap;
 
                     // Add a marker in Sydney, Australia, and move the camera.
-                    LatLng sydney = new LatLng(53.893009, 27.567444);
-                    this.googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Minsk"));
-                    this.googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                    LatLng minskPosition = new LatLng(53.893009, 27.567444);
+                    this.googleMap.addMarker(new MarkerOptions().position(minskPosition).title("Marker in Minsk"));
+                    this.googleMap.moveCamera(CameraUpdateFactory.newLatLng(minskPosition));
                 });
             }
         }

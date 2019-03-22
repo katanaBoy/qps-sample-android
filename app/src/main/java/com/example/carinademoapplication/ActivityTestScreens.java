@@ -10,7 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import com.example.carinademoapplication.test_screens.FragmentCharts;
 import com.example.carinademoapplication.test_screens.FragmentMap;
+import com.example.carinademoapplication.test_screens.FragmentUiElements;
 import com.example.carinademoapplication.test_screens.FragmentWebView;
 
 public class ActivityTestScreens extends AppCompatActivity {
@@ -55,8 +57,16 @@ public class ActivityTestScreens extends AppCompatActivity {
                 newFragment = new FragmentWebView();
                 break;
 
+            case R.id.nav_charts:
+                newFragment = new FragmentCharts();
+                break;
+
             case R.id.nav_map:
                 newFragment = new FragmentMap();
+                break;
+
+            case R.id.nav_uiElements:
+                newFragment = new FragmentUiElements();
                 break;
         }
 
