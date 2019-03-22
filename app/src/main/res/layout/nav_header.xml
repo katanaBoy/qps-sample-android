@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="?attr/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/img_person_avatar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dolor sit amet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#ADADAD"
+        android:textSize="12sp" />
+</LinearLayout>
