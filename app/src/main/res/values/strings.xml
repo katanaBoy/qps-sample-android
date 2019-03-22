@@ -14,4 +14,6 @@
     <string name="charts">Charts</string>
     <string name="map">Map</string>
     <string name="ui_elements">UI elements</string>
+
+    <string name="google_maps_key">AIzaSyC69RU8HVJPTQ9KfwwN4L5Knd92J4Rslc0</string>
 </resources>

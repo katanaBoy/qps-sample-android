@@ -23,6 +23,21 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    signingConfigs {
+        release {
+            storeFile file("keystore/keystore.key")
+            storePassword 'Ksd474Zv299iibe9zJmMe97CXV6dZd'
+            keyAlias 'carina'
+            keyPassword 'j99W3F87ma3m7KfnALan4t8yXaZD9Z'
+        }
+        debug {
+            storeFile file("keystore/keystore.key")
+            storePassword 'Ksd474Zv299iibe9zJmMe97CXV6dZd'
+            keyAlias 'carina'
+            keyPassword 'j99W3F87ma3m7KfnALan4t8yXaZD9Z'
+        }
+    }
 }
 
 dependencies {
