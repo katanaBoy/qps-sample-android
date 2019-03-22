@@ -37,16 +37,26 @@ public class ActivityTestScreens extends AppCompatActivity {
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(menuItem -> {
-            menuItem.setChecked(true);
-            drawerLayout.closeDrawers();
-
-            replaceFragmentById(menuItem.getItemId());
+            onSideMenuSelected(menuItem);
 
             return true;
         });
 
+        setInitialScreenState(navigationView);
+    }
+
+    private void setInitialScreenState(NavigationView navigationView) {
         navigationView.setCheckedItem(R.id.nav_webView);
         replaceFragmentById(R.id.nav_webView);
+        setTitle(R.string.web_view);
+    }
+
+    private void onSideMenuSelected(MenuItem menuItem) {
+        menuItem.setChecked(true);
+        drawerLayout.closeDrawers();
+
+        replaceFragmentById(menuItem.getItemId());
+        setTitle(menuItem.getTitle());
     }
 
     private void replaceFragmentById(int itemId) {
@@ -85,6 +95,7 @@ public class ActivityTestScreens extends AppCompatActivity {
                 drawerLayout.openDrawer(GravityCompat.START);
                 return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 }
