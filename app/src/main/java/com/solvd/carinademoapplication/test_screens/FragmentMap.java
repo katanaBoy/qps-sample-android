@@ -9,16 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.solvd.carinademoapplication.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.solvd.carinademoapplication.R;
 
 public class FragmentMap extends Fragment {
-
-    private GoogleMap googleMap;
 
     @SuppressLint("InflateParams")
     @Nullable
@@ -32,15 +29,15 @@ public class FragmentMap extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         if (getFragmentManager() != null) {
-            SupportMapFragment mapFragment = (SupportMapFragment) getFragmentManager().findFragmentById(R.id.map);
+            SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map);
             if (mapFragment != null) {
                 mapFragment.getMapAsync(googleMap -> {
-                    this.googleMap = googleMap;
+                    googleMap.getUiSettings().setZoomControlsEnabled(true);
+                    googleMap.setBuildingsEnabled(true);
 
-                    // Add a marker in Sydney, Australia, and move the camera.
                     LatLng minskPosition = new LatLng(53.893009, 27.567444);
-                    this.googleMap.addMarker(new MarkerOptions().position(minskPosition).title("Marker in Minsk"));
-                    this.googleMap.moveCamera(CameraUpdateFactory.newLatLng(minskPosition));
+                    googleMap.addMarker(new MarkerOptions().position(minskPosition).title("Marker in Minsk"));
+                    googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(minskPosition, 10.5f));
                 });
             }
         }
