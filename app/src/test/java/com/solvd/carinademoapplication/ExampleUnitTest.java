@@ -1,4 +1,4 @@
-package com.example.carinademoapplication;
+package com.solvd.carinademoapplication;
 
 import org.junit.Test;
 

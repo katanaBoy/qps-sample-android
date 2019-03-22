@@ -1,4 +1,4 @@
-package com.example.carinademoapplication;
+package com.solvd.carinademoapplication;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -10,10 +10,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.example.carinademoapplication.test_screens.FragmentCharts;
-import com.example.carinademoapplication.test_screens.FragmentMap;
-import com.example.carinademoapplication.test_screens.FragmentUiElements;
-import com.example.carinademoapplication.test_screens.FragmentWebView;
+import com.solvd.carinademoapplication.test_screens.FragmentCharts;
+import com.solvd.carinademoapplication.test_screens.FragmentMap;
+import com.solvd.carinademoapplication.test_screens.FragmentUiElements;
+import com.solvd.carinademoapplication.test_screens.FragmentWebView;
 
 public class ActivityTestScreens extends AppCompatActivity {
 

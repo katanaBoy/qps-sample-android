@@ -1,4 +1,4 @@
-package com.example.carinademoapplication.test_screens;
+package com.solvd.carinademoapplication.test_screens;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.carinademoapplication.R;
+import com.solvd.carinademoapplication.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;

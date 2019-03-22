@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.carinademoapplication">
+    package="com.solvd.carinademoapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

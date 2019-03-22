@@ -1,4 +1,4 @@
-package com.example.carinademoapplication;
+package com.solvd.carinademoapplication;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

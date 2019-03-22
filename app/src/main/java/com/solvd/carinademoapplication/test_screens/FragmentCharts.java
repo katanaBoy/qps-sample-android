@@ -1,4 +1,4 @@
-package com.example.carinademoapplication.test_screens;
+package com.solvd.carinademoapplication.test_screens;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,14 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.carinademoapplication.R;
+import com.solvd.carinademoapplication.R;
 
-public class FragmentUiElements extends Fragment {
+public class FragmentCharts extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_ui_elements, null);
+        return inflater.inflate(R.layout.fragment_charts, null);
     }
 
     @Override

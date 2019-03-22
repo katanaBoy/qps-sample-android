@@ -1,4 +1,4 @@
-package com.example.carinademoapplication;
+package com.solvd.carinademoapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
