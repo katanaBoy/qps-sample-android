@@ -1,6 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/fragmentFruitChart"
+            android:name="com.solvd.carinademoapplication.test_screens.charts.FragmentFruitChart"
+            android:layout_width="match_parent"
+            android:layout_height="340dp" />
+
+        <fragment
+            android:id="@+id/fragmentVennDiagram"
+            android:name="com.solvd.carinademoapplication.test_screens.charts.FragmentVennDiagram"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="340dp" />
+
+        <fragment
+            android:id="@+id/fragmentHiloChart"
+            android:name="com.solvd.carinademoapplication.test_screens.charts.FragmentHiloChart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="700dp" />
+    </RelativeLayout>
+</ScrollView>
