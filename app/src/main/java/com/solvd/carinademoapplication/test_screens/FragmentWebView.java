@@ -30,6 +30,8 @@ public class FragmentWebView extends Fragment {
 
     @SuppressLint("SetJavaScriptEnabled")
     private void initWebView(WebView webView) {
+        WebView.setWebContentsDebuggingEnabled(true);
+
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("https://www.carina-core.io/");
     }
