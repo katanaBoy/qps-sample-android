@@ -1,0 +1,20 @@
+<resources>
+    <string name="carina_world">欢迎来到Carina 世界</string>
+    <string name="next_button">下一个</string>
+    <string name="sign_up_button">注册</string>
+    <string name="name_text">名称</string>
+    <string name="password_text">密码</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="checkbox_text">我同意隐私政策</string>
+    <string name="log_in">登录</string>
+    <string name="web_view">网页浏览</string>
+    <string name="charts">图表</string>
+    <string name="map">地图</string>
+    <string name="ui_elements">UI元素</string>
+    <string name="text">文本</string>
+    <string name="date">日期</string>
+    <string name="other">其他</string>
+    <string name="enable">启用</string>
+    <string name="email">电子邮件</string>
+</resources>
