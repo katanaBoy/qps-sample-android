@@ -1,0 +1,20 @@
+<resources>
+    <string name="carina_world">Bienvenue chez Carina World!</string>
+    <string name="next_button">Prochain</string>
+    <string name="sign_up_button">S\'inscrire</string>
+    <string name="name_text">Nom</string>
+    <string name="password_text">Mot de passe</string>
+    <string name="male">Mâle</string>
+    <string name="female">Femelle</string>
+    <string name="checkbox_text">J\'accepte la politique de confidentialité</string>
+    <string name="log_in">S\'identifier</string>
+    <string name="web_view">Affichage Web</string>
+    <string name="charts">Graphiques</string>
+    <string name="map">Carte</string>
+    <string name="ui_elements">Éléments d\'interface utilisateur</string>
+    <string name="text">Texte</string>
+    <string name="date">Date</string>
+    <string name="other">Autre</string>
+    <string name="enable">Activer</string>
+    <string name="email">Email</string>
+</resources>

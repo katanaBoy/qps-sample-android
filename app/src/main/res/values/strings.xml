@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Carina Demo</string>
+    <string name="app_name" translatable="false">Carina Demo</string>
     <string name="carina_world">Welcome to Carina World!</string>
     <string name="next_button">Next</string>
     <string name="sign_up_button">Sign Up</string>
@@ -9,18 +9,18 @@
     <string name="female">Female</string>
     <string name="checkbox_text">I agree to the Privacy Policy</string>
     <string name="log_in">Log In</string>
-    <string name="carina">CARINA</string>
+    <string name="carina" translatable="false">CARINA</string>
     <string name="web_view">Web View</string>
     <string name="charts">Charts</string>
     <string name="map">Map</string>
     <string name="ui_elements">UI elements</string>
 
-    <string name="google_maps_key">AIzaSyC69RU8HVJPTQ9KfwwN4L5Knd92J4Rslc0</string>
+    <string name="google_maps_key" translatable="false">AIzaSyC69RU8HVJPTQ9KfwwN4L5Knd92J4Rslc0</string>
     <string name="text">Text</string>
     <string name="email">Email</string>
     <string name="date">Date</string>]
     <string name="other">Other</string>
     <string name="enable">Enable</string>
-    <string name="dolor_sit_amet">Dolor sit amet</string>
-    <string name="lorem_ipsum">Lorem ipsum</string>
+    <string name="dolor_sit_amet" translatable="false">Dolor sit amet</string>
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum</string>
 </resources>
