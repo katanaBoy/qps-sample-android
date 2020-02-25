@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -37,6 +38,11 @@ android {
             keyAlias 'carina'
             keyPassword 'j99W3F87ma3m7KfnALan4t8yXaZD9Z'
         }
+    }
+
+    android {
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
     }
 }
 
