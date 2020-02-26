@@ -40,9 +40,16 @@ android {
         }
     }
 
-    android {
-        aaptOptions.cruncherEnabled = false
-        aaptOptions.useNewCruncher = false
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    lintOptions {
+        quiet true
+        abortOnError false
+        disable 'InvalidPackage'
+        disable 'MissingTranslation'
+        disable 'ExtraTranslation'
+        check 'Interoperability'
     }
 }
 
